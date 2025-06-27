@@ -1,0 +1,31 @@
+.footer-custom {
+    margin-top: 100px;
+    background-color: #212529 !important;
+    font-size: 0.95rem;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .footer-custom h6 {
+    color: #fff;
+  }
+  
+  .footer-custom p {
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-custom {
+      text-align: center;
+    }
+  }
+  
