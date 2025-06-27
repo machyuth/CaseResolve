@@ -36,7 +36,7 @@ const Complaint = () => {
     e.preventDefault();
     try {
       const { _id } = user;
-      await axios.post(`http://localhost:8000/Complaint/${_id}`, userComplaint);
+      await axios.post(`https://caseresolve.onrender.com/Complaint/${_id}`, userComplaint);
       alert('Your complaint has been submitted!');
       handleClear();
     } catch (err) {

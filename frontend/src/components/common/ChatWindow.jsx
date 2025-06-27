@@ -33,7 +33,7 @@ const ChatWindow = (props) => {
             message: messageInput,
             complaintId: props.complaintId
          }
-         const response = await axios.post('http://localhost:8000/messages', data)
+         const response = await axios.post('https://caseresolve.onrender.com/messages', data)
          setMessageList([...messageList, response.data]);
          setMessageInput('');
          fetchMessageList();

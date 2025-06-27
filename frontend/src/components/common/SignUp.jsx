@@ -30,7 +30,7 @@ const SignUp = () => {
     e.preventDefault();
     const updatedUser = { ...user, userType: title };
     try {
-      await axios.post('http://localhost:8000/SignUp', updatedUser);
+      await axios.post('https://caseresolve.onrender.com/SignUp', updatedUser);
       alert('Record submitted');
     } catch (err) {
       console.log(err);

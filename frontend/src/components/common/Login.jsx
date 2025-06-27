@@ -21,7 +21,7 @@ const Login = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-         const res = await axios.post('http://localhost:8000/Login', user);
+         const res = await axios.post('https://caseresolve.onrender.com/Login', user);
          alert('Successfully logged in');
          localStorage.setItem('user', JSON.stringify(res.data));
          const { userType } = res.data;
