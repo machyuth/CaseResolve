@@ -28,8 +28,8 @@ const AccordionAdmin = () => {
 
   const handleAssign = async (agentId, complaintId, status, agentName) => {
     try {
-      await axios.get(`http://localhost:8000/AgentUsers/${agentId}`);
-      await axios.post('http://localhost:8000/assignedComplaints', {
+      await axios.get(`https://caseresolve.onrender.com/AgentUsers/${agentId}`);
+      await axios.post('https://caseresolve.onrender.com/assignedComplaints', {
         agentId,
         complaintId,
         status,

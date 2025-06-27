@@ -61,7 +61,7 @@ const UserInfo = () => {
       try {
          const confirmed = window.confirm("Are you sure you want to delete the user?");
          if (confirmed) {
-            await axios.delete(`http://localhost:8000/OrdinaryUsers/${userId}`);
+            await axios.delete(`https://caseresolve.onrender.com/OrdinaryUsers/${userId}`);
             setOrdinaryList(ordinaryList.filter((user) => user._id !== userId));
          }
       } catch (error) {

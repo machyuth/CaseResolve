@@ -35,7 +35,7 @@ const AgentHome = () => {
 
   const handleStatusChange = async (complaintId) => {
     try {
-      await axios.put(`http://localhost:8000/complaint/${complaintId}`, { status: 'completed' });
+      await axios.put(`https://caseresolve.onrender.com/complaint/${complaintId}`, { status: 'completed' });
       setComplaints((prev) =>
         prev.map((c) =>
           c._doc.complaintId === complaintId

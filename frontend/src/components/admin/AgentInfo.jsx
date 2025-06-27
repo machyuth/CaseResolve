@@ -47,7 +47,7 @@ const AgentInfo = () => {
     if (!confirm) return;
 
     try {
-      await axios.put(`http://localhost:8000/user/${id}`, data);
+      await axios.put(`https://caseresolve.onrender.com/user/${id}`, data);
       alert('Agent updated successfully');
     } catch (err) {
       console.log(err);
@@ -59,7 +59,7 @@ const AgentInfo = () => {
     if (!confirm) return;
 
     try {
-      await axios.delete(`http://localhost:8000/OrdinaryUsers/${id}`);
+      await axios.delete(`https://caseresolve.onrender.com/OrdinaryUsers/${id}`);
       setAgentList(agentList.filter(agent => agent._id !== id));
     } catch (err) {
       console.log(err);
@@ -69,7 +69,7 @@ const AgentInfo = () => {
   useEffect(() => {
     const getAgents = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/agentUsers');
+        const res = await axios.get('https://caseresolve.onrender.com/agentUsers');
         setAgentList(res.data);
       } catch (err) {
         console.log(err);
